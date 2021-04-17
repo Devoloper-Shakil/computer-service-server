@@ -9,7 +9,10 @@ const app = express()
 app.use(express.json())
 app.use(bodyParser.json())
 app.use(cors());
+
 const port =  4000;
+
+
 
 
 
@@ -165,4 +168,4 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(process.env.PORT || port)
+app.listen(process.env.port || port)
